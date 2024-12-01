@@ -1,0 +1,30 @@
+Konzept,Kondition,ja_nein,level
+definitiv,Befall von Level II,ja,"Ib, bds VIIa+b"
+definitiv,Befall von Level II,nein,
+definitiv,Vordere Zunge/Mundboden,ja,Ia
+definitiv,Vordere Zunge/Mundboden,nein,
+definitiv,Hintere Pharynxwand oder Mittellinienüberschreitung​,ja,VIIa
+definitiv,Hintere Pharynxwand oder Mittellinienüberschreitung​,nein,
+definitiv,Level IV Befall,ja,Mediale supra
+definitiv,Level IV Befall,nein,
+definitiv,Tumorinfiltration,ja,2cm des SCM
+definitiv,Tumorinfiltration,nein,
+definitiv,Subglottische- oder Ösophusinfiltration​,ja,VI
+adjuvant,Befall von ipsilateralem Level IV oder V ​,ja,IVb und Vc
+adjuvant,Befall von ipsilateralem Level IV oder V ​,nein,
+adjuvant,Befall von ipsilateralem Level II,ja,VIIb
+adjuvant,Befall von ipsilateralem Level II,nein,
+adjuvant,Befall von Level II oder III ​,ja,IB und IV
+adjuvant,Befall von Level II oder III ​,nein,
+adjuvant,Befall von lateralen oder medialen retropharyngealen Lymphknoten ,ja,RT der medialen retropharyngealen Lymphknoten
+adjuvant,Befall von lateralen oder medialen retropharyngealen Lymphknoten ,nein,
+adjuvant,Gingivo-mandibulär oder Unterlippeninfiltration,ja,VIa
+adjuvant,Gingivo-mandibulär oder Unterlippeninfiltration,nein,
+adjuvant,Ausbreitung in die Mundhöhle o. vorderen Gaumenbogen​,ja,Ib
+adjuvant,Ausbreitung in die Mundhöhle o. vorderen Gaumenbogen​,nein,
+adjuvant,Infiltration anteriorer Mundboden o. Zunge​,ja,VI
+adjuvant,Infiltration anteriorer Mundboden o. Zunge​,nein,
+adjuvant,Ösophagusinfiltration bzw. retrocricoidale Ausbreitung​,ja,VIb
+adjuvant,Ösophagusinfiltration bzw. retrocricoidale Ausbreitung​,nein,
+adjuvant,Sternocleidomastoideus infiltriert,ja,2cm
+adjuvant,Sternocleidomastoideus infiltriert,nein,
