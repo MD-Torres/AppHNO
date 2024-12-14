@@ -35,15 +35,15 @@ ID,Tumorlokalisation,Seite,NStadium,Elektiveslevel,Konzept
 34,Oropharynx,kontralateral,cN3a,abhängig vom Befall,definitiv
 35,Oropharynx,ipsilateral,cN3b,abhängig vom Befall,definitiv
 36,Oropharynx,kontralateral,cN3b,abhängig vom Befall,definitiv
-37,Hypopharynx,ipsilateral,cN0,"II-IV+ VI,VII​",definitiv
+37,Hypopharynx,ipsilateral,cN0,"II-IV+ VI,VII",definitiv
 38,Hypopharynx,kontralateral,cN0,II-IV,definitiv
-39,Hypopharynx,ipsilateral,cN1,"II-IV+ VI,VII​",definitiv
+39,Hypopharynx,ipsilateral,cN1,"II-IV+ VI,VII",definitiv
 40,Hypopharynx,kontralateral,cN1,II-IV,definitiv
-41,Hypopharynx,ipsilateral,cN2,"II-IV+ VI,VII​",definitiv
+41,Hypopharynx,ipsilateral,cN2,"II-IV+ VI,VII",definitiv
 42,Hypopharynx,kontralateral,cN2,II-IV,definitiv
-43,Hypopharynx,ipsilateral,cN2a,"Ib-V+ VI,VII​",definitiv
+43,Hypopharynx,ipsilateral,cN2a,"Ib-V+ VI,VII",definitiv
 44,Hypopharynx,kontralateral,cN2a,"II-IV, VI ",definitiv
-45,Hypopharynx,ipsilateral,cN2b,"Ib-V+ VI,VII​",definitiv
+45,Hypopharynx,ipsilateral,cN2b,"Ib-V+ VI,VII",definitiv
 46,Hypopharynx,kontralateral,cN2b,"II-IV, VI ",definitiv
 47,Hypopharynx,ipsilateral,cN2c,abhängig vom Befall,definitiv
 48,Hypopharynx,kontralateral,cN2c,abhängig vom Befall,definitiv
@@ -53,15 +53,15 @@ ID,Tumorlokalisation,Seite,NStadium,Elektiveslevel,Konzept
 52,Hypopharynx,kontralateral,cN3a,abhängig vom Befall,definitiv
 53,Hypopharynx,ipsilateral,cN3b,abhängig vom Befall,definitiv
 54,Hypopharynx,kontralateral,cN3b,abhängig vom Befall,definitiv
-55,Larynx,ipsilateral,cN0,II-IV​,definitiv
+55,Larynx,ipsilateral,cN0,II-IV,definitiv
 56,Larynx,kontralateral,cN0,II-IV,definitiv
-57,Larynx,ipsilateral,cN1,II-IV​,definitiv
+57,Larynx,ipsilateral,cN1,II-IV,definitiv
 58,Larynx,kontralateral,cN1,II-IV,definitiv
-59,Larynx,ipsilateral,cN2,II-IV​,definitiv
+59,Larynx,ipsilateral,cN2,II-IV,definitiv
 60,Larynx,kontralateral,cN2,II-IV,definitiv
-61,Larynx,ipsilateral,cN2a,Ib-V +VII​,definitiv
+61,Larynx,ipsilateral,cN2a,Ib-V +VII,definitiv
 62,Larynx,kontralateral,cN2a," II-IV,VI ",definitiv
-63,Larynx,ipsilateral,cN2b,Ib-V +VII​,definitiv
+63,Larynx,ipsilateral,cN2b,Ib-V +VII,definitiv
 64,Larynx,kontralateral,cN2b,"II-IV,VI ",definitiv
 65,Larynx,ipsilateral,cN2c,abhängig vom Befall,definitiv
 66,Larynx,kontralateral,cN2c,abhängig vom Befall,definitiv
@@ -113,33 +113,33 @@ ID,Tumorlokalisation,Seite,NStadium,Elektiveslevel,Konzept
 112,Hypopharynx​,kontralateral,pN1,II-IVa+VIIa,adjuvant
 113,Hypopharynx​,ipsilateral,pN2,II-IVa+VIIa,adjuvant
 114,Hypopharynx​,kontralateral,pN2,II-IVa+VIIa,adjuvant
-115,Hypopharynx​,ipsilateral,pN2a,Ib-V+VIIa​,adjuvant
+115,Hypopharynx​,ipsilateral,pN2a,Ib-V+VIIa,adjuvant
 116,Hypopharynx​,kontralateral,pN2a,II-IVa+VIIa,adjuvant
-117,Hypopharynx​,ipsilateral,pN2b,Ib-V+VIIa​,adjuvant
+117,Hypopharynx​,ipsilateral,pN2b,Ib-V+VIIa,adjuvant
 118,Hypopharynx​,kontralateral,pN2b,II-IVa+VIIa,adjuvant
-119,Hypopharynx​,ipsilateral,pN2c,Ib-V+VIIa​,adjuvant
+119,Hypopharynx​,ipsilateral,pN2c,Ib-V+VIIa,adjuvant
 120,Hypopharynx​,kontralateral,pN2c,II-IVa+VIIa,adjuvant
-121,Hypopharynx​,ipsilateral,pN3,Ib-V+VIIa​,adjuvant
+121,Hypopharynx​,ipsilateral,pN3,Ib-V+VIIa,adjuvant
 122,Hypopharynx​,kontralateral,pN3,II-IVa+VIIa,adjuvant
-123,Hypopharynx​,ipsilateral,pN3a,Ib-V+VIIa​,adjuvant
+123,Hypopharynx​,ipsilateral,pN3a,Ib-V+VIIa,adjuvant
 124,Hypopharynx​,kontralateral,pN3a,II-IVa+VIIa,adjuvant
-125,Hypopharynx​,ipsilateral,pN3b,Ib-V+VIIa​,adjuvant
+125,Hypopharynx​,ipsilateral,pN3b,Ib-V+VIIa,adjuvant
 126,Hypopharynx​,kontralateral,pN3b,II-IVa+VIIa,adjuvant
 127,Larynx​,ipsilateral,pN0,II-IVa,adjuvant
 128,Larynx​,kontralateral,pN0,II-IVa,adjuvant
 129,Larynx​,ipsilateral,pN1,II-IVa,adjuvant
 130,Larynx​,kontralateral,pN1,II-IVa,adjuvant
-131,Larynx​,ipsilateral,pN2,"II-V ,VIb​",adjuvant
+131,Larynx​,ipsilateral,pN2,"II-V ,VIb",adjuvant
 132,Larynx​,kontralateral,pN2,"II-IVa, VIb",adjuvant
-133,Larynx​,ipsilateral,pN2a,"II-V ,VIb​",adjuvant
+133,Larynx​,ipsilateral,pN2a,"II-V ,VIb",adjuvant
 134,Larynx​,kontralateral,pN2a,"II-IVa , VIb",adjuvant
-135,Larynx​,ipsilateral,pN2b,"II-V ,VIb​",adjuvant
+135,Larynx​,ipsilateral,pN2b,"II-V ,VIb",adjuvant
 136,Larynx​,kontralateral,pN2b,"II-IVa , VIb",adjuvant
-137,Larynx​,ipsilateral,pN2c,"II-V ,VIb​",adjuvant
+137,Larynx​,ipsilateral,pN2c,"II-V ,VIb",adjuvant
 138,Larynx​,kontralateral,pN2c,"II-IVa , VIb",adjuvant
-139,Larynx​,ipsilateral,pN3,"II-V ,VIb​",adjuvant
+139,Larynx​,ipsilateral,pN3,"II-V ,VIb",adjuvant
 140,Larynx​,kontralateral,pN3,"II-IVa , VIb",adjuvant
-141,Larynx​,ipsilateral,pN3a,"II-V ,VIb​",adjuvant
+141,Larynx​,ipsilateral,pN3a,"II-V ,VIb",adjuvant
 142,Larynx​,kontralateral,pN3a,"II-IVa , VIb",adjuvant
-143,Larynx​,ipsilateral,pN3b,"II-V ,VIb​",adjuvant
+143,Larynx​,ipsilateral,pN3b,"II-V ,VIb",adjuvant
 144,Larynx​,kontralateral,pN3b,"II-IVa , VIb",adjuvant

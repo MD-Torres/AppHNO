@@ -24,7 +24,7 @@ ui <- fluidPage(
       
       uiOutput("kondition_checkboxes"),  # Dynamic checkboxes for Kondition
       
-      # actionButton("submit", "Elektive Levels")
+       actionButton("submit", "Elektive Levels")
     ),
     
     mainPanel(
