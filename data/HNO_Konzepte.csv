@@ -1,0 +1,145 @@
+ID,Tumorlokalisation,Seite,NStadium,Elektiveslevel,Konzept
+1,Mundhöhle,ipsilateral,cN0,I-IV,definitiv
+2,Mundhöhle,kontralateral,cN0,II-IV,definitiv
+3,Mundhöhle,ipsilateral,cN1,I-IV,definitiv
+4,Mundhöhle,kontralateral,cN1,II-IV,definitiv
+5,Mundhöhle,ipsilateral,cN2,I-IV,definitiv
+6,Mundhöhle,kontralateral,cN2,II-IV,definitiv
+7,Mundhöhle,ipsilateral,cN2a,I-V+VII,definitiv
+8,Mundhöhle,kontralateral,cN2a,I-V,definitiv
+9,Mundhöhle,ipsilateral,cN2b,I-V+VII,definitiv
+10,Mundhöhle,kontralateral,cN2b,I-V,definitiv
+11,Mundhöhle,ipsilateral,cN2c,abhängig vom Befall,definitiv
+12,Mundhöhle,kontralateral,cN2c,abhängig vom Befall,definitiv
+13,Mundhöhle,ipsilateral,cN3,abhängig vom Befall,definitiv
+14,Mundhöhle,kontralateral,cN3,abhängig vom Befall,definitiv
+15,Mundhöhle,ipsilateral,cN3a,abhängig vom Befall,definitiv
+16,Mundhöhle,kontralateral,cN3a,abhängig vom Befall,definitiv
+17,Mundhöhle,ipsilateral,cN3b,abhängig vom Befall,definitiv
+18,Mundhöhle,kontralateral,cN3b,abhängig vom Befall,definitiv
+19,Oropharynx,ipsilateral,cN0,II-IV+ VII​,definitiv
+20,Oropharynx,kontralateral,cN0,II-IV,definitiv
+21,Oropharynx,ipsilateral,cN1,II-IV+ VII​,definitiv
+22,Oropharynx,kontralateral,cN1,II-IV,definitiv
+23,Oropharynx,ipsilateral,cN2,II-IV+ VII​,definitiv
+24,Oropharynx,kontralateral,cN2,II-IV,definitiv
+25,Oropharynx,ipsilateral,cN2a,II-V+VII​,definitiv
+26,Oropharynx,kontralateral,cN2a,II-IV,definitiv
+27,Oropharynx,ipsilateral,cN2b,II-V+VII​,definitiv
+28,Oropharynx,kontralateral,cN2b,II-IV,definitiv
+29,Oropharynx,ipsilateral,cN2c,abhängig vom Befall,definitiv
+30,Oropharynx,kontralateral,cN2c,abhängig vom Befall,definitiv
+31,Oropharynx,ipsilateral,cN3,abhängig vom Befall,definitiv
+32,Oropharynx,kontralateral,cN3,abhängig vom Befall,definitiv
+33,Oropharynx,ipsilateral,cN3a,abhängig vom Befall,definitiv
+34,Oropharynx,kontralateral,cN3a,abhängig vom Befall,definitiv
+35,Oropharynx,ipsilateral,cN3b,abhängig vom Befall,definitiv
+36,Oropharynx,kontralateral,cN3b,abhängig vom Befall,definitiv
+37,Hypopharynx,ipsilateral,cN0,"II-IV+ VI,VII​",definitiv
+38,Hypopharynx,kontralateral,cN0,II-IV,definitiv
+39,Hypopharynx,ipsilateral,cN1,"II-IV+ VI,VII​",definitiv
+40,Hypopharynx,kontralateral,cN1,II-IV,definitiv
+41,Hypopharynx,ipsilateral,cN2,"II-IV+ VI,VII​",definitiv
+42,Hypopharynx,kontralateral,cN2,II-IV,definitiv
+43,Hypopharynx,ipsilateral,cN2a,"Ib-V+ VI,VII​",definitiv
+44,Hypopharynx,kontralateral,cN2a,"II-IV, VI ",definitiv
+45,Hypopharynx,ipsilateral,cN2b,"Ib-V+ VI,VII​",definitiv
+46,Hypopharynx,kontralateral,cN2b,"II-IV, VI ",definitiv
+47,Hypopharynx,ipsilateral,cN2c,abhängig vom Befall,definitiv
+48,Hypopharynx,kontralateral,cN2c,abhängig vom Befall,definitiv
+49,Hypopharynx,ipsilateral,cN3,abhängig vom Befall,definitiv
+50,Hypopharynx,kontralateral,cN3,abhängig vom Befall,definitiv
+51,Hypopharynx,ipsilateral,cN3a,abhängig vom Befall,definitiv
+52,Hypopharynx,kontralateral,cN3a,abhängig vom Befall,definitiv
+53,Hypopharynx,ipsilateral,cN3b,abhängig vom Befall,definitiv
+54,Hypopharynx,kontralateral,cN3b,abhängig vom Befall,definitiv
+55,Larynx,ipsilateral,cN0,II-IV​,definitiv
+56,Larynx,kontralateral,cN0,II-IV,definitiv
+57,Larynx,ipsilateral,cN1,II-IV​,definitiv
+58,Larynx,kontralateral,cN1,II-IV,definitiv
+59,Larynx,ipsilateral,cN2,II-IV​,definitiv
+60,Larynx,kontralateral,cN2,II-IV,definitiv
+61,Larynx,ipsilateral,cN2a,Ib-V +VII​,definitiv
+62,Larynx,kontralateral,cN2a," II-IV,VI ",definitiv
+63,Larynx,ipsilateral,cN2b,Ib-V +VII​,definitiv
+64,Larynx,kontralateral,cN2b,"II-IV,VI ",definitiv
+65,Larynx,ipsilateral,cN2c,abhängig vom Befall,definitiv
+66,Larynx,kontralateral,cN2c,abhängig vom Befall,definitiv
+67,Larynx,ipsilateral,cN3,abhängig vom Befall,definitiv
+68,Larynx,kontralateral,cN3,abhängig vom Befall,definitiv
+69,Larynx,ipsilateral,cN3a,abhängig vom Befall,definitiv
+70,Larynx,kontralateral,cN3a,abhängig vom Befall,definitiv
+71,Larynx,ipsilateral,cN3b,abhängig vom Befall,definitiv
+72,Larynx,kontralateral,cN3b,abhängig vom Befall,definitiv
+73,Mundhöhle,ipsilateral,pN0,Ia-IVa,adjuvant
+74,Mundhöhle,kontralateral,pN0,Ia-IVa,adjuvant
+75,Mundhöhle,ipsilateral,pN1,Ia-IVa,adjuvant
+76,Mundhöhle,kontralateral,pN1,Ia-IVa,adjuvant
+77,Mundhöhle,ipsilateral,pN2,Ia-IVa,adjuvant
+78,Mundhöhle,kontralateral,pN2,Ia-IVa,adjuvant
+79,Mundhöhle,ipsilateral,pN2a,I-V,adjuvant
+80,Mundhöhle,kontralateral,pN2a,I-V,adjuvant
+81,Mundhöhle,ipsilateral,pN2b,I-V,adjuvant
+82,Mundhöhle,kontralateral,pN2b,I-V,adjuvant
+83,Mundhöhle,ipsilateral,pN2c,I-V,adjuvant
+84,Mundhöhle,kontralateral,pN2c,I-V,adjuvant
+85,Mundhöhle,ipsilateral,pN3,I-V,adjuvant
+86,Mundhöhle,kontralateral,pN3,I-V,adjuvant
+87,Mundhöhle,ipsilateral,pN3a,I-V,adjuvant
+88,Mundhöhle,kontralateral,pN3a,I-V,adjuvant
+89,Mundhöhle,ipsilateral,pN3b,I-V,adjuvant
+90,Mundhöhle,kontralateral,pN3b,I-V,adjuvant
+91,Oropharynx,ipsilateral,pN0,II-IVa,adjuvant
+92,Oropharynx,kontralateral,pN0,II-IVa,adjuvant
+93,Oropharynx,ipsilateral,pN1,II-IVa,adjuvant
+94,Oropharynx,kontralateral,pN1,II-IVa,adjuvant
+95,Oropharynx,ipsilateral,pN2,II-IVa,adjuvant
+96,Oropharynx,kontralateral,pN2,II-IVa,adjuvant
+97,Oropharynx,ipsilateral,pN2a,Ib-V,adjuvant
+98,Oropharynx,kontralateral,pN2a,II-IVa,adjuvant
+99,Oropharynx,ipsilateral,pN2b,Ib-V,adjuvant
+100,Oropharynx,kontralateral,pN2b,II-IVa,adjuvant
+101,Oropharynx,ipsilateral,pN2c,Ib-V,adjuvant
+102,Oropharynx,kontralateral,pN2c,II-IVa,adjuvant
+103,Oropharynx,ipsilateral,pN3,Ib-V,adjuvant
+104,Oropharynx,kontralateral,pN3,II-IVa,adjuvant
+105,Oropharynx,ipsilateral,pN3a,Ib-V,adjuvant
+106,Oropharynx,kontralateral,pN3a,II-IVa,adjuvant
+107,Oropharynx,ipsilateral,pN3b,Ib-V,adjuvant
+108,Oropharynx,kontralateral,pN3b,II-IVa,adjuvant
+109,Hypopharynx​,ipsilateral,pN0,II-IVa+VIIa,adjuvant
+110,Hypopharynx​,kontralateral,pN0,II-IVa+VIIa,adjuvant
+111,Hypopharynx​,ipsilateral,pN1,II-IVa+VIIa,adjuvant
+112,Hypopharynx​,kontralateral,pN1,II-IVa+VIIa,adjuvant
+113,Hypopharynx​,ipsilateral,pN2,II-IVa+VIIa,adjuvant
+114,Hypopharynx​,kontralateral,pN2,II-IVa+VIIa,adjuvant
+115,Hypopharynx​,ipsilateral,pN2a,Ib-V+VIIa​,adjuvant
+116,Hypopharynx​,kontralateral,pN2a,II-IVa+VIIa,adjuvant
+117,Hypopharynx​,ipsilateral,pN2b,Ib-V+VIIa​,adjuvant
+118,Hypopharynx​,kontralateral,pN2b,II-IVa+VIIa,adjuvant
+119,Hypopharynx​,ipsilateral,pN2c,Ib-V+VIIa​,adjuvant
+120,Hypopharynx​,kontralateral,pN2c,II-IVa+VIIa,adjuvant
+121,Hypopharynx​,ipsilateral,pN3,Ib-V+VIIa​,adjuvant
+122,Hypopharynx​,kontralateral,pN3,II-IVa+VIIa,adjuvant
+123,Hypopharynx​,ipsilateral,pN3a,Ib-V+VIIa​,adjuvant
+124,Hypopharynx​,kontralateral,pN3a,II-IVa+VIIa,adjuvant
+125,Hypopharynx​,ipsilateral,pN3b,Ib-V+VIIa​,adjuvant
+126,Hypopharynx​,kontralateral,pN3b,II-IVa+VIIa,adjuvant
+127,Larynx​,ipsilateral,pN0,II-IVa,adjuvant
+128,Larynx​,kontralateral,pN0,II-IVa,adjuvant
+129,Larynx​,ipsilateral,pN1,II-IVa,adjuvant
+130,Larynx​,kontralateral,pN1,II-IVa,adjuvant
+131,Larynx​,ipsilateral,pN2,"II-V ,VIb​",adjuvant
+132,Larynx​,kontralateral,pN2,"II-IVa, VIb",adjuvant
+133,Larynx​,ipsilateral,pN2a,"II-V ,VIb​",adjuvant
+134,Larynx​,kontralateral,pN2a,"II-IVa , VIb",adjuvant
+135,Larynx​,ipsilateral,pN2b,"II-V ,VIb​",adjuvant
+136,Larynx​,kontralateral,pN2b,"II-IVa , VIb",adjuvant
+137,Larynx​,ipsilateral,pN2c,"II-V ,VIb​",adjuvant
+138,Larynx​,kontralateral,pN2c,"II-IVa , VIb",adjuvant
+139,Larynx​,ipsilateral,pN3,"II-V ,VIb​",adjuvant
+140,Larynx​,kontralateral,pN3,"II-IVa , VIb",adjuvant
+141,Larynx​,ipsilateral,pN3a,"II-V ,VIb​",adjuvant
+142,Larynx​,kontralateral,pN3a,"II-IVa , VIb",adjuvant
+143,Larynx​,ipsilateral,pN3b,"II-V ,VIb​",adjuvant
+144,Larynx​,kontralateral,pN3b,"II-IVa , VIb",adjuvant
