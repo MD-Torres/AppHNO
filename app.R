@@ -32,6 +32,16 @@ ui <- fluidPage(
       verbatimTextOutput("ipsilateralLevel"),
       verbatimTextOutput("kontralateralLevel"),
       h3("Zusätzliche Lymphknoten Levels:"),
+      verbatimTextOutput("konditionLevel"),
+      # h3("Tumorlokalisation & N-Stadium Image:"),
+      # imageOutput("outputImage")
+    ),
+    
+    mainPanel(
+      h3("RT bis 50,4 Gy:"),
+      verbatimTextOutput("ipsilateralLevel"),
+      verbatimTextOutput("kontralateralLevel"),
+      h3("Zusätzliche Lymphknoten Levels:"),
       verbatimTextOutput("konditionLevel")
     )
   )
@@ -68,6 +78,8 @@ server <- function(input, output, session) {
         selected = NULL
       )
     })
+    
+    
   })
   
   # Filter data for ipsilateral
@@ -130,6 +142,27 @@ server <- function(input, output, session) {
       paste( paste(result$level, collapse = ", "))
     }
   })
+  
+  
+  # output$outputImage <- renderImage({
+  #   req(input$tumorlokalisation, input$nstadium)
+  #   
+  #   # Construct the image path
+  #   image_path <- paste0("www/images/", input$tumorlokalisation, "_", input$nstadium, ".png")
+  #   
+  #   # Check if the file exists
+  #   if (file.exists(image_path)) {
+  #     list(src = image_path, alt = "Image not available", width = "100%")
+  #   } else {
+  #     list(src = NULL, alt = "No image found for the selected parameters.")
+  #   }
+  # }, deleteFile = FALSE)
+  # 
+  # 
+  
+  
+  
+  
 }
 
 # Run the App
