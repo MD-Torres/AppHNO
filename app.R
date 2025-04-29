@@ -5,6 +5,8 @@ library(googledrive)
 library(httr)
 library(DT)
 
+# New App
+
 # Google Authentication
 # Define authentication function to be called when app starts
 setup_google_auth <- function() {
