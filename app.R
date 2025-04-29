@@ -12,10 +12,10 @@ setup_google_auth <- function() {
   # Checks if service account credentials exist, otherwise uses OAuth
   if (file.exists("JSON_Key/service-account.json")) {
     gs4_auth(path = "JSON_Key/service-account.json")
-    drive_auth(path = "JSON_Key/service-account.json")
+    #drive_auth(path = "JSON_Key/service-account.json")
   } else {
     gs4_auth(email = "arzt@jorge-torres.de")
-    drive_auth(email = "arzt@jorge-torres.de")
+    #drive_auth(email = "arzt@jorge-torres.de")
   }
 }
 
