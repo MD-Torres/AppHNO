@@ -247,7 +247,7 @@ server <- function(input, output, session) {
     } else {
       # Return only the needed columns and format them
       filtered_icd %>%
-        select(Lokalisation, Bezeichnung, `ICD-10`) %>%
+        select(Bezeichnung, `ICD-10`) %>%
         datatable(
           options = list(
             pageLength = 5,
