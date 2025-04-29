@@ -20,10 +20,9 @@ setup_google_auth <- function() {
 
 # Load data from Google Sheets
 load_google_data <- function() {
-  # Replace these URLs with your actual Google Sheet URLs
   main_sheet_url <- "https://docs.google.com/spreadsheets/d/13yP8iQ-z_DTFiGE0IYX1C3zMWrZ3_UqyarV7mOkJYSQ"
   zusatz_sheet_url <- "https://docs.google.com/spreadsheets/d/12EKmeD--_JrhAsRL63Y8Sah15dDY8IcI9V9CslZQZlE"
-  
+
   # Read data from Google Sheets
   main_data <- read_sheet(main_sheet_url)
   zusatz_data <- read_sheet(zusatz_sheet_url)
@@ -160,10 +159,18 @@ server <- function(input, output, session) {
     updateSelectInput(session, "nstadium",
                       choices = unique(filtered_nstadium),
                       selected = NULL)
+  })
+  
+  # Update condition checkboxes based on both Tumorlokalisation and Konzept
+  observeEvent(c(input$tumorlokalisation, input$konzept), {
+    req(input$tumorlokalisation, input$konzept, zusatz_data())
     
-    # Create checkboxes dynamically for Kondition without ja/nein
+    # Filter conditions based on both location and concept
     relevant_kondition <- zusatz_data() %>%
-      filter(Konzept == input$konzept) %>%
+      filter(
+        Lokalisation == input$tumorlokalisation,
+        Konzept == input$konzept
+      ) %>%
       select(Kondition) %>%
       distinct()
     
@@ -227,9 +234,14 @@ server <- function(input, output, session) {
   output$konditionLevel <- renderText({
     req(input$kondition, zusatz_data())
     
-    # Filter Zusatz data based on checked conditions (ja)
+    # Filter Zusatz data based on checked conditions, location, and concept
     result <- zusatz_data() %>%
-      filter(Kondition %in% input$kondition & ja_nein == "ja") %>%
+      filter(
+        Lokalisation == input$tumorlokalisation,
+        Konzept == input$konzept,
+        Kondition %in% input$kondition,
+        ja_nein == "ja"
+      ) %>%
       select(level) %>%
       distinct()
     
