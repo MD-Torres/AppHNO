@@ -3,6 +3,7 @@ library(dplyr)
 library(googlesheets4)
 library(googledrive)
 library(httr)
+library(DT)
 
 # Google Authentication
 # Define authentication function to be called when app starts
@@ -22,51 +23,24 @@ setup_google_auth <- function() {
 load_google_data <- function() {
   main_sheet_url <- "https://docs.google.com/spreadsheets/d/13yP8iQ-z_DTFiGE0IYX1C3zMWrZ3_UqyarV7mOkJYSQ"
   zusatz_sheet_url <- "https://docs.google.com/spreadsheets/d/12EKmeD--_JrhAsRL63Y8Sah15dDY8IcI9V9CslZQZlE"
+  icd_sheet_url <- "https://docs.google.com/spreadsheets/d/1NmGszAw0drH1woUIt6elRp_SiExIt-ybl-Pbe1CNjGU"
 
   # Read data from Google Sheets
   main_data <- read_sheet(main_sheet_url)
   zusatz_data <- read_sheet(zusatz_sheet_url)
+  icd_data <- read_sheet(icd_sheet_url) 
   
   # Convert to data.frames to ensure compatibility with existing code
   main_data <- as.data.frame(main_data)
   zusatz_data <- as.data.frame(zusatz_data)
+  icd_data <- as.data.frame(icd_data)
   
-  # Return both datasets
-  return(list(main_data = main_data, zusatz_data = zusatz_data))
-}
-
-# Function to get image from Google Drive
-get_drive_image <- function(tumor, nstadium) {
-  # Construct image name
-  image_name <- paste0(tumor, "_", nstadium, ".png")
-  
-  # Search for the image in Google Drive
-  image_file <- drive_find(
-    pattern = image_name,
-    type = "image/png"
-  )
-  
-  if (nrow(image_file) > 0) {
-    # Create temp directory if it doesn't exist
-    temp_dir <- "temp_images"
-    if (!dir.exists(temp_dir)) {
-      dir.create(temp_dir)
-    }
-    
-    # Create temp file path
-    temp_file <- file.path(temp_dir, image_name)
-    
-    # Download the file
-    drive_download(
-      file = image_file$id[1],
-      path = temp_file,
-      overwrite = TRUE
-    )
-    
-    return(temp_file)
-  } else {
-    return(NULL)
-  }
+  # Return all datasets
+  return(list(
+    main_data = main_data, 
+    zusatz_data = zusatz_data,
+    icd_data = icd_data
+  ))
 }
 
 # Define UI
@@ -100,8 +74,8 @@ ui <- fluidPage(
       verbatimTextOutput("kontralateralLevel"),
       h3("Zusätzliche Lymphknoten Levels:"),
       verbatimTextOutput("konditionLevel"),
-      h3("Tumorlokalisation & N-Stadium Image:"),
-      imageOutput("outputImage")
+      h3("ICD-10 Codes:"),
+      DTOutput("icdTable")  # Display ICD-10 codes as a table
     )
   )
 )
@@ -114,7 +88,8 @@ server <- function(input, output, session) {
   # Create reactive values to store the data
   data_store <- reactiveVal(list(
     main_data = data.frame(),
-    zusatz_data = data.frame()
+    zusatz_data = data.frame(),
+    icd_data = data.frame()
   ))
   
   # Load data on startup and when refresh button is clicked
@@ -142,6 +117,10 @@ server <- function(input, output, session) {
   
   zusatz_data <- reactive({
     data_store()$zusatz_data
+  })
+  
+  icd_data <- reactive({
+    data_store()$icd_data
   })
   
   # Dynamically update N-Stadium based on Konzept
@@ -252,36 +231,32 @@ server <- function(input, output, session) {
     }
   })
   
-  # Keep track of current image file
-  current_image <- reactiveVal(NULL)
-  
-  # Display image from Google Drive
-  output$outputImage <- renderImage({
-    req(input$tumorlokalisation, input$nstadium)
+  # Display ICD-10 table filtered by selected Tumorlokalisation
+  output$icdTable <- renderDT({
+    req(input$tumorlokalisation, icd_data())
     
-    # Get the image from Google Drive
-    image_path <- get_drive_image(input$tumorlokalisation, input$nstadium)
-    current_image(image_path)
+    # Filter ICD data based on selected tumorlokalisation
+    filtered_icd <- icd_data() %>%
+      filter(Lokalisation == input$tumorlokalisation)
     
-    if (!is.null(image_path) && file.exists(image_path)) {
-      list(src = image_path, 
-           alt = "Tumor and N-stadium visualization", 
-           width = "100%")
+    # Return formatted table
+    if (nrow(filtered_icd) == 0) {
+      return(data.frame(
+        Message = "No ICD-10 codes found for the selected tumor location."
+      ))
     } else {
-      # Return a placeholder or default image
-      list(src = "www/images/placeholder.png", 
-           alt = "No image available for the selected parameters", 
-           width = "100%")
-    }
-  }, deleteFile = FALSE)
-  
-  # Clean up temporary files when the session ends
-  session$onSessionEnded(function() {
-    # Clean up temp files
-    temp_dir <- "temp_images"
-    if (dir.exists(temp_dir)) {
-      file_list <- list.files(temp_dir, full.names = TRUE)
-      unlink(file_list)
+      # Return only the needed columns and format them
+      filtered_icd %>%
+        select(Lokalisation, Bezeichnung, `ICD-10`) %>%
+        datatable(
+          options = list(
+            pageLength = 5,
+            dom = 'tp',  # Only show table and pagination controls
+            ordering = TRUE
+          ),
+          rownames = FALSE,
+          class = 'cell-border stripe'
+        )
     }
   })
 }
